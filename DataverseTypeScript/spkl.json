@@ -1,0 +1,16 @@
+{
+  "webresources": [
+    {
+      "profile": "default,debug",
+      "root": "webresources/",
+      "solution": "<solutionname>",
+      "files": [
+        {
+          "uniquename": "<prefix>_demoForm.js",
+          "file": "js\\<filename>.js",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}
