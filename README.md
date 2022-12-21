@@ -172,7 +172,7 @@ module.exports = {
 
 Under "entry" level you can declare which TypeScript files you want to convert to JavaScript. In our case we only have the "demoForm.ts".
 
-Under "output" level we can configure how the output file should be created. For the JavaScript filename it will be a prefix (use the same as in your Power App solution), the name of the TypeScript file (demoForm) and .js. The library define the name of the functions within the JavaScript files. Prefix (again use the same as in your Power App solution), the name of the TypeScript file (demoForm) and the name of the function. In our case for demoForm it will be "[prefix].demoForm.onLoad". This is the full name of the function when you register it on a Dataverse form.
+Under "output" level we can configure how the output files should be created. For the JavaScript filename it will be a prefix (use the same as in your Power App solution), the name of the TypeScript file (demoForm) and .js. The library define the name of the functions within the JavaScript files. Prefix (again use the same as in your Power App solution), the name of the TypeScript file (demoForm) and the name of the function. In our case for demoForm it will be "[prefix].demoForm.onLoad". This is the full name of the function when you register it on a Dataverse form.
 
 Time to build!
 
