@@ -197,3 +197,7 @@ Show the webresource
 Add the webresource to the form
 
 Test in form
+
+# Debugging and testing TypeScript
+
+TBD
