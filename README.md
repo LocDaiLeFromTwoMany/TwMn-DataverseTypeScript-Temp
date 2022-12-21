@@ -80,8 +80,8 @@ Go to "XrmDefinitelyTyped" folder and open "XrmDefinitelyTyped.exe.config". You'
 </configuration>
 ```
 
-- Add your environmentName
-- Add your App ID and Client Secret from the App Registration in Azure Active Directory
+- Add your \<environmentName\>
+- Add your \<App ID\> and \<Client Secret\> from the App Registration in Azure Active Directory
 
 The example above only tells the tool to generate declaration files for account and contact tables. You can extend this string with more tables using the logical name and seperate them with comma, example "account, contact, opportunity, lead".
 
@@ -172,7 +172,7 @@ module.exports = {
 
 Under "entry" level you can declare which TypeScript files you want to convert to JavaScript. In our case we only have the "demoForm.ts".
 
-Under "output" level we can configure how the output files should be created. For the JavaScript filename it will be a prefix (use the same as in your Power App solution), the name of the TypeScript file (demoForm) and .js. The library define the name of the functions within the JavaScript files. Prefix (again use the same as in your Power App solution), the name of the TypeScript file (demoForm) and the name of the function. In our case for demoForm it will be "[prefix].demoForm.onLoad". This is the full name of the function when you register it on a Dataverse form.
+Under "output" level we can configure how the output files should be created. For the JavaScript filename it will be a \<prefix\> (use the same as in your Power App solution), the name of the TypeScript file (demoForm) and .js. The library define the name of the functions within the JavaScript files. \<prefix\> (again use the same as in your Power App solution), the name of the TypeScript file (demoForm) and the name of the function. In our case for demoForm it will be "\<prefix\>.demoForm.onLoad". This is the full name of the function when you register it on a Dataverse form.
 
 Time to build!
 
@@ -184,7 +184,9 @@ npm run build
 
 You will then see the JavaScript file for "demoForm.ts" under webresources-->js.
 
-# Deploy JavaScript as Webresource
+Now you can upload this JavaScript file to your Power App solution manually as usually, but will it not be cooler to deploy it automatically using a tool?
+
+# Deploy JavaScript as Webresource using a tool step-by-step
 
 spkl.json config
 
