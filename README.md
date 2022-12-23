@@ -188,7 +188,38 @@ Now you can upload this JavaScript file to your Power App solution manually as u
 
 # Deploy JavaScript as Webresource using a tool step-by-step
 
-spkl.json config
+Instead uploading your JavaScript files manually to your Power App solution, you can use a tool called "spkl".
+
+### 1. Config spkl.json
+
+Open "spkl.json". You'll see following JSON content:
+
+```json
+{
+  "webresources": [
+    {
+      "profile": "default,debug",
+      "root": "webresources/",
+      "solution": "<solutionname>",
+      "files": [
+        {
+          "uniquename": "<prefix>_<filename>.js",
+          "file": "js\\<filename>.js",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}
+```
+
+- Add your \<solutioname\>
+- Under array of "files" you can add information about those JavaScript files you want to deploy to the solution.
+  - <strong>uniquename</strong>: the name of the webresource (I suggest the following convention, \<prefix\>\_\<filename\>.js)
+  - <strong>file</strong>: the location of the file. In this project it is js\\\\\<filename\>.js because we defined that the root folder is "webresources\\"
+  - <strong>description</strong>: the description of the webresource (can be empty)
+
+### 2. Run spkl deploy-webresources.bat
 
 run spkl deploy-webresources.bat
 
