@@ -2,6 +2,11 @@
 
 This project is a template to get started with developing Dataverse Webresources using TypeScript instead of Vanilla JavaScript. How to setup the project so that it is connected to your Dataverse environment will be described step by step below, enjoy! 🤗
 
+#### Credit to:
+
+- [delegateas/XrmDefinitelyTyped](https://github.com/delegateas/XrmDefinitelyTyped)
+- [scottdurow/SparkleXrm](https://github.com/scottdurow/SparkleXrm)
+
 ## Why TypeScript? 🤯
 
 - TypeScript supports JS libraries & API Documentation
