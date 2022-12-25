@@ -221,14 +221,30 @@ Open "spkl.json". You'll see following JSON content:
 
 ### 2. Run spkl deploy-webresources.bat
 
-run spkl deploy-webresources.bat
+Run "deploy.webresources.bat" program to deploy the JavaScript files to your solution. You can find the program in the "spkl" folder. This program will guide you through authentication to your Dataverse environment.
 
-Show the webresource
+### 3. Webresource(s) created
 
-Add the webresource to the form
+![](./mdimages/webresource.png)
 
-Test in form
+As you can see is my prefix "twmn".
+
+### 4. Add the webresource to a form
+
+Add the JavaScript file to Account main form.
+
+![](./mdimages/addjavascriptlibrary.png)
+
+Now add the a new onLoad event of the form to execute the JavaScript onLoad function from demoForm.js. As I mentioned abode the full function name, in my case is, twmn_demoForm.onLoad.
+
+![](./mdimages/addjavascriptfunction.png)
+
+### 5. TaDaaa!
+
+Navigate to an Account record and when the form loads you'll see the notification as written in the TypeScript code 🤙
+
+![](./mdimages/accountform.png)
 
 # Debugging and testing TypeScript
 
-TBD
+TBD 🥱 😴 🥱 😴 🥱 😴 🥱 😴
